@@ -20,8 +20,8 @@ defmodule Qiniu.Mixfile do
   end
 
   defp deps do
-    [{:poison, "~> 1.3.1"},
-     {:httpoison, "~> 0.6.2"},
+    [{:poison, "~> 1.5.0"},
+     {:httpoison, "~> 0.7.2"},
      {:ex_doc, "~> 0.7", only: :docs},
      {:earmark, "~> 0.1", only: :docs},
      {:inch_ex, only: :docs},
