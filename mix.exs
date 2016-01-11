@@ -1,7 +1,7 @@
 defmodule Qiniu.Mixfile do
   use Mix.Project
 
-  @version "0.2.1"
+  @version "0.2.2"
 
   def project do
     [app: :qiniu,
@@ -20,11 +20,11 @@ defmodule Qiniu.Mixfile do
   end
 
   defp deps do
-    [{:poison, "~> 1.5.0"},
-     {:httpoison, "~> 0.7.2"},
-     {:ex_doc, "~> 0.7", only: :docs},
-     {:earmark, "~> 0.1", only: :docs},
-     {:inch_ex, only: :docs},
+    [{:poison, "~> 1.3.1"},
+     {:httpoison, "~> 0.6.2"},
+     {:ex_doc, "~> 0.11.3", only: :docs},
+     {:earmark, "~> 0.2.0", only: :docs},
+     {:inch_ex, "~> 0.4.0", only: :docs},
      {:mock, "~> 0.1.0", only: :test}
     ]
   end
@@ -34,7 +34,7 @@ defmodule Qiniu.Mixfile do
   end
 
   defp package do
-    [contributors: ["Tony Han"],
+    [maintainers: ["Tony Han"],
      licenses: ["MIT"],
      links: %{"GitHub" => "https://github.com/tony612/qiniu"},
      files: ~w(mix.exs README.md CHANGELOG.md lib config)]
